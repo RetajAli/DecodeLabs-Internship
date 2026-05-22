@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <h1 class="logo">Retaj.dev</h1>
+
+        <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+            </span>
+        </label>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <p class="badge">DecodeLabs Project 3</p>
+
+        <h2 id="greeting">Hello, I'm Retaj Ali</h2>
+
+        <p class="hero-description">
+            An interactive frontend project using JavaScript, DOM manipulation,
+            dynamic content updates, buttons, toggles, and real-time user interaction.
+        </p>
+
+        <div class="hero-actions">
+            <button id="changeTextBtn" class="btn primary">Change Greeting</button>
+            <button id="resetGreetingBtn" class="btn secondary">Reset</button>
+        </div>
+
+        <div class="status-card">
+            <p>Current Time</p>
+            <h3 id="clock">00:00:00</h3>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stat-card">
+            <h3>Button Click Counter</h3>
+            <p class="counter-number" id="counter">0</p>
+
+            <div class="counter-buttons">
+                <button id="decreaseBtn">−</button>
+                <button id="resetBtn">Reset</button>
+                <button id="increaseBtn">+</button>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <h3>Dynamic Frontend Tip</h3>
+            <p id="dynamicText">
+                Click the button to generate a frontend development tip.
+            </p>
+
+            <button id="tipBtn" class="btn primary">Generate Tip</button>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Interactive Skills</h2>
+
+        <p id="skillMessage">
+            Click a skill card to display more details.
+        </p>
+
+        <div class="skills-grid">
+            <article class="skill-card" data-skill="HTML creates the structure and meaning of every webpage.">
+                <span>01</span>
+                <h3>HTML</h3>
+            </article>
+
+            <article class="skill-card" data-skill="CSS controls styling, colors, layouts, spacing, and responsiveness.">
+                <span>02</span>
+                <h3>CSS</h3>
+            </article>
+
+            <article class="skill-card" data-skill="JavaScript adds logic, events, interactivity, and dynamic updates.">
+                <span>03</span>
+                <h3>JavaScript</h3>
+            </article>
+
+            <article class="skill-card" data-skill="DOM manipulation allows JavaScript to change page content in real time.">
+                <span>04</span>
+                <h3>DOM</h3>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Retaj Ali | DecodeLabs Frontend Project 3</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
